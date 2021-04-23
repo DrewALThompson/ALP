@@ -1,6 +1,8 @@
+import {Link} from 'react-router-dom';
+
 const NavBarLink = (props) => {
     return(
-        <link to={props.route} type='button'>{props.children}</link>
+        <Link to={props.route} type='button'>{props.children}</Link>
     )
 }
 

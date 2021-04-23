@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-const NotFount = () => {
+const NotFound = () => {
     return (
         <h1>This Page Doesn't Exist Sorry! Please Try Again</h1>
     )
