@@ -8,12 +8,15 @@ import ProjectsContainer from './containers/projectsContainer';
 import AboutContainer from './containers/aboutContainer';
 import HomeContainer from './containers/homeContainer';
 import NotFound from './components/notFound';
+import NavBarLink from './components/navBarLink';
 
 
 function App() {
   return (
     <Router>
-      <NavBar />
+      <NavBarLink route={'/'}>Home</NavBarLink>
+      <NavBarLink route={'/about'}>About</NavBarLink>
+      <NavBarLink route={'/projects'}>Projects</NavBarLink>
       
       <Switch>
         <Route exact path='/'>

@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 
-class NotFound extends Component {
-
+const NotFount = () => {
+    return (
+        <h1>This Page Doesn't Exist Sorry! Please Try Again</h1>
+    )
 }
 
 export default NotFound
