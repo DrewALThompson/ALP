@@ -4,6 +4,11 @@ import {
   Switch,
   Route
 } from 'react-router-dom';
+import ProjectsContainer from './containers/projectsContainer';
+import AboutContainer from './containers/aboutContainer';
+import HomeContainer from './containers/homeContainer';
+import NotFound from './components/notFound';
+
 
 function App() {
   return (
@@ -12,13 +17,13 @@ function App() {
       
       <Switch>
         <Route exact path='/'>
-          <RouteContainer />
+          <HomeContainer />
         </Route>
         <Route path='/about'>
-          <UserContainer />
+          <AboutContainer />
         </Route>
         <Route path='/projects'>
-          <WordsContainer />
+          <ProjectsContainer />
         </Route>
         <Route path='*'>
           <NotFound />
