@@ -1,7 +1,9 @@
-import React, {Component} from 'react';
+import React, {useState} from 'react';
 
-class ProjectsContainer extends Component {
-
+const ProjectsContainer = () => {
+    return (
+        <></>
+    )
 }
 
 export default ProjectsContainer

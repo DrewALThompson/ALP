@@ -1,7 +1,9 @@
-import React, {Component} from 'react';
+import React, {useState} from 'react';
 
-class HomeContainer extends Component {
-
+const HomeContainer = () => {
+    return (
+        <></>
+    )
 }
 
 export default HomeContainer

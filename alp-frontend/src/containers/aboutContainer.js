@@ -1,7 +1,9 @@
-import React, {Component} from 'react';
+import React, {useState} from 'react';
 
-class AboutContainer extends Component {
-
+const AboutContainer = () => {
+    return (
+        <></>
+    )
 }
 
 export default AboutContainer
