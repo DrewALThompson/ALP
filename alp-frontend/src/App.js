@@ -4,15 +4,15 @@ import {
   Switch,
   Route
 } from 'react-router-dom';
-import ProjectsContainer from './containers/projectsContainer';
-import AboutContainer from './containers/aboutContainer';
-import HomeContainer from './containers/homeContainer';
+import MainPageContainer from './containers/mainPageContainer';
 import NotFound from './components/notFound';
 import NavBarLink from './components/navBarLink';
-import './mainPageRoutes.json'
+import MainPageRoutes from './data/mainPageRoutes';
 
 
-function App() {
+const App = () => {
+
+  
   return (
     <Router>
       <NavBarLink route={'/'}>Home</NavBarLink>
@@ -20,14 +20,14 @@ function App() {
       <NavBarLink route={'/projects'}>Projects</NavBarLink>
       
       <Switch>
-        <Route exact path='/'>
-          <HomeContainer />
+      <Route exact path='/'>
+          <MainPageContainer page={MainPageRoutes.home}/>
         </Route>
         <Route path='/about'>
-          <AboutContainer />
+          <MainPageContainer page={MainPageRoutes.about}/>
         </Route>
         <Route path='/projects'>
-          <ProjectsContainer />
+          <MainPageContainer page={MainPageRoutes.projects}/>
         </Route>
         <Route path='*'>
           <NotFound />

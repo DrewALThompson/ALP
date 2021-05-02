@@ -1,4 +1,4 @@
-export const mainPageRoutes = {
+const mainPageRoutes = {
     home: {
         title: "hi, my name is Drew Thompson and I design webpages",
         main: "If you want the lowdown on what I do feel free to follow the links below, otherwise feel free to explore.",
@@ -36,3 +36,5 @@ export const mainPageRoutes = {
         urlThreeTitle: null
     }
 }
+
+export default mainPageRoutes
