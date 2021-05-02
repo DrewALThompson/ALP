@@ -1,0 +1,27 @@
+{
+    "home": {
+        "title": null,
+        "main": null,
+        "titleTwo": null,
+        "secondary": null,
+        "urlOne": null
+    },
+    "about": {
+        "title": null,
+        "main": null,
+        "titleTwo": null,
+        "secondary": null,
+        "urlOne": null
+    },
+    "projects": {
+        "title": null,
+        "main": null,
+        "urlOne": null,
+        "titleTwo": null,
+        "secondary": null,
+        "urlTwo": null,
+        "titleThree": null,
+        "tertiary": null,
+        "urlThree": null
+    }
+}

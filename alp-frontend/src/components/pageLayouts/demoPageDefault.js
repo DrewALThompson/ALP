@@ -1,12 +1,15 @@
 import React, {useState} from 'react';
 
-const DemoPage = (props) => {
+const DemoPageDefault = (props) => {
+
 
     return (
         <div>
-            
+            <h1>{props.demoTitle}</h1>
+            <p>{props.demoDescription}</p>
+            <button onClick={props.onClick}>Demo</button>
         </div>
     )
 }
 
-export default DemoPage
+export default DemoPageDefault
