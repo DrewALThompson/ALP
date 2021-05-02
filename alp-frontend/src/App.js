@@ -9,6 +9,7 @@ import AboutContainer from './containers/aboutContainer';
 import HomeContainer from './containers/homeContainer';
 import NotFound from './components/notFound';
 import NavBarLink from './components/navBarLink';
+import './mainPageRoutes.json'
 
 
 function App() {
