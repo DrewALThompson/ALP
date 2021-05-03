@@ -10,13 +10,13 @@ const PageDefault = (props) => {
     if(layout.image !== null){
         image = <img src={layout.image + '.jpg'} alt={layout.imageTitle} />
     }
-    if(urlOne !== null){
+    if(layout.urlOne !== null){
         urlOne = <a href={layout.urlOne}>{layout.urlOneTitle}</a>
     }
-    if(urlTwo !== null){
+    if(layout.urlTwo !== null){
         urlTwo = <a href={layout.urlTwo}>{layout.urlTwoTitle}</a>
     }
-    if(urlThree !== null){
+    if(layout.urlThree !== null){
         urlThree = <a href={layout.urlThree}>{layout.urlThreeTitle}</a>
     }
     return (

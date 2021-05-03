@@ -1,6 +1,6 @@
 const mainPageRoutes = {
     home: {
-        title: "hi, my name is Drew Thompson and I design webpages",
+        title: "Hi, my name is Drew Thompson and I design webpages",
         main: "If you want the lowdown on what I do feel free to follow the links below, otherwise feel free to explore.",
         image: null,
         imageAlt: "Drew Thompson's Headshot",
@@ -14,12 +14,11 @@ const mainPageRoutes = {
         urlTwoInfo: "Linkedin Link for Drew Thompson"
     },
     about: {
-        title: null,
+        title: 'Coding Languages',
         main: null,
-        titleTwo: null,
+        titleTwo: 'Work Experience',
         secondary: null,
-        urlOne: null,
-        urlOneTitle: null
+        image: 'resume'
     },
     projects: {
         title: null,
