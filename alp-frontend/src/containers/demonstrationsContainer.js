@@ -18,21 +18,10 @@ const DemonstrationsContainer = () => {
             <NavBarLink route={'/accessability'}>Accessability</NavBarLink>
       
             <Switch>
-                <Route exact path='/'>
+                <Route exact path='/accessibility'>
                     <HomeContainer />
                 </Route>
-                <Route path='/about'>
-                    <AboutContainer />
-                </Route>
-                <Route path='/projects'>
-                    <ProjectsContainer />
-                </Route>
-                <Route path='*'>
-                    <NotFound />
-                </Route>
-                <Route path='/accessability'>
-                    <DemonstrationsContainer/>
-                </Route>
+                <Route path={`${path}/:demoId`}><DemoPage /></Route>
             </Switch>
         </Router>
     )

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PageDefault = (props) => {
+const PageDefaultContainer = (props) => {
 
     let layout = props.page
     let image = null;
@@ -10,20 +10,11 @@ const PageDefault = (props) => {
     if(layout.image !== null){
         image = <img src={layout.image + '.jpg'} alt={layout.imageTitle} />
     }
-    if(layout.urlOne !== null){
-        urlOne = <a href={layout.urlOne}>{layout.urlOneTitle}</a>
-    }
-    if(layout.urlTwo !== null){
-        urlTwo = <a href={layout.urlTwo}>{layout.urlTwoTitle}</a>
-    }
-    if(layout.urlThree !== null){
-        urlThree = <a href={layout.urlThree}>{layout.urlThreeTitle}</a>
-    }
     return (
         <div>
             <h1>{layout.title}</h1>
             <p>{layout.main}</p>
-            {image !== null ? image : null}
+            {layout.image !== null ? image : null}
             <h2>{layout.titleTwo}</h2>
             <p>{layout.secondary}</p>
             {urlOne !== null ? urlOne : null}
@@ -33,4 +24,4 @@ const PageDefault = (props) => {
     )
 }
 
-export default PageDefault
+export default PageDefaultContainer
