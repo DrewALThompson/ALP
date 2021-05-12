@@ -3,13 +3,7 @@ import React from 'react';
 const PageDefaultContainer = (props) => {
 
     let layout = props.page
-    let image = null;
-    let urlOne = null;
-    let urlTwo = null;
-    let urlThree = null;
-    if(layout.image !== null){
-        image = <img src={layout.image + '.jpg'} alt={layout.imageTitle} />
-    }
+    
     return (
         <div>
             <h1>{layout.title}</h1>
